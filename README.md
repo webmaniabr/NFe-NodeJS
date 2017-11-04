@@ -12,7 +12,7 @@ Através do emissor de Nota Fiscal da WebmaniaBR®, você conta com a emissão e
 
 ## Exemplos
 
-Desenvolvimento baseado na classe nativa [http package](https://golang.org/pkg/net/http/).
+Desenvolvimento baseado a classe nativa [http module](https://nodejs.org/api/http.html).
 
 - **statusSefaz**: Verifica se o Sefaz está Online ou Offline.
 - **validadeCertificado**: Verifica se o Certificado A1 é válido e quantos dias faltam para expirar.

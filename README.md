@@ -14,15 +14,22 @@ Através do emissor de Nota Fiscal da WebmaniaBR®, você conta com a emissão e
 
 Desenvolvimento baseado a classe nativa [http module](https://nodejs.org/api/http.html).
 
-- **statusSefaz**: Verifica se o Sefaz está Online ou Offline.
-- **validadeCertificado**: Verifica se o Certificado A1 é válido e quantos dias faltam para expirar.
-- **emissaoNotaFiscal**: Emissão da Nota Fiscal junto ao SEFAZ.
-- **consultaNotaFiscal**: Consulta o status da Nota Fiscal enviada para o SEFAZ.
 - **cancelarNotaFiscal**: Cancelar Nota Fiscal enviada ao SEFAZ.
-- **inutilizarNumeracao**: Inutilizar sequência de numeração junto ao SEFAZ.
 - **cartaCorrecao**: Corrigir uma Nota Fiscal junto ao SEFAZ.
-- **devolucaoNotaFiscal**: Emissão de Nota Fiscal de devolução junto ao SEFAZ.
-- **retornoNotaFiscal**: Exemplo de retorno obtido através da url_notificacao.
+- **consultarNotaFiscal**: Consulta a Nota Fiscal enviada para o SEFAZ.
+- **emitirNotaFiscal_Armamentos**: Emissão da Nota Fiscal com detalhamento específico de Armamentos.
+- **emitirNotaFiscal_Combustivel**: Emissão da Nota Fiscal com detalhamento específico de Combustivel.
+- **emitirNotaFiscal_Medicamentos**: Emissão da Nota Fiscal com detalhamento específico de Medicamentos.
+- **emitirNotaFiscal_Rastreabilidade**: Emissão da Nota Fiscal com detalhamento específico de Rastreabilidade.
+- **emitirNotaFiscal_VeiculosNovos**: Emissão da Nota Fiscal com detalhamento específico de Veiculos Novos.
+- **emitirNotaFiscal**: Emissão da Nota Fiscal junto ao SEFAZ.
+- **emitirNotaFiscalAjuste**: Emite uma nota fiscal de ajuste.
+- **emitirNotaFiscalComplementar_Imposto**: Emite uma Nota Fiscal complementar.
+- **emitirNotaFiscalComplementar_PrecoQuantidade**: Emite uma Nota Fiscal complementar.
+- **emitirNotaFiscalDevolucao**: Emissão de Nota Fiscal de devolução junto ao SEFAZ.
+- **inutilizarNumeracao**: Inutilizar sequência de numeração junto ao SEFAZ.
+- **statusSefaz**: Verifica se o Sefaz está Online ou Offline.
+- **validadeCertificadoA1**: Verifica se o Certificado A1 é válido e quantos dias faltam para expirar.
 
 ## Suporte
 

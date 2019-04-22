@@ -1,14 +1,7 @@
-/**
-* Informações da Carta de Correção
-*
-* A Carta de Correção Eletrônica (CC-e) é um evento legal e tem por objetivo
-* corrigir algumas informações da NF-e que já foi emitida.
-*/
-
 var request = require("request");
 
 var options = { method: 'POST',
-  url: 'https://webmaniabr.com/api/1/nfe/cartacorrecao/',
+  url: 'https://webmaniabr.com/api/1/nfe/devolucao/',
   headers:
     { 
       'content-type': 'application/json',
@@ -21,7 +14,10 @@ var options = { method: 'POST',
   body:
     { 
       chave: '00000000000000000000000000000000000000000000',
-      correcao: 'O CFOP correto é 5.102 referente a revenda tributada no mesmo estado.'
+      natureza_operacao: 'Devolução de venda de produção do estabelecimento',
+      codigo_cfop: '1.202',
+      produtos: [ 2, 3 ],
+      ambiente: '2' 
     },
   json: true };
 
@@ -30,9 +26,14 @@ request(options, function (error, response, body) {
 
   console.log(body);
 
+  var uuid = body.uuid; // Número único de identificação
   var status = body.status; // aprovado, reprovado, cancelado, processamento ou contingencia
+  var nfe = body.nfe; // Número da NF-e
+  var serie = body.serie; // Número de série
+  var recibo = body.recibo; // Número do recibo
+  var chave = body.chave; // Número da chave de acesso
   var xml = body.xml; // Link para o XML
-  var dacce = body.dacce; // Link para dacce
+  var danfe = body.danfe; // Link para DANFE
   var log = body.log; // Log de retorno do SEFAZ
-
+  
 });

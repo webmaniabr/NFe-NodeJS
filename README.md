@@ -4,6 +4,19 @@
 
 # NFe-NodeJS
 
+<!-- deprecation-notice:start -->
+> [!WARNING]
+> **Repositório descontinuado.** Esta integração legada não receberá novas funcionalidades, manutenção ou correções de segurança.
+>
+> Para novas integrações e migrações planejadas, utilize o **[Webmania SDK para Node.js e TypeScript](https://github.com/webmaniabr/webmania-node)**.
+
+**Integrações existentes:** este aviso não desativa a API nem exige migração imediata. O código e os arquivos desta versão permanecem disponíveis.
+
+**Migração:** o novo SDK possui interface e requisitos próprios. Consulte o [README do novo SDK](https://github.com/webmaniabr/webmania-node#readme), adapte as chamadas da sua aplicação e valide a integração em homologação antes de migrar para produção.
+<!-- deprecation-notice:end -->
+
+---
+
 Através do emissor de Nota Fiscal da Webmania®, você conta com a emissão e arquivamento das suas notas fiscais, cálculo automático de impostos, geração do Danfe para impressão e envio automático de e-mails para os clientes. Realize a integração com o seu sistema utilizando a nossa REST API.
 
 - Emissor de Nota Fiscal Webmania®: [Saiba mais](https://webmaniabr.com/nota-fiscal-eletronica/)
